@@ -1,7 +1,7 @@
 <template>
-  <div class="w-full max-w-screen-md mx-auto py-8 px-3">
+  <div class="w-full max-w-screen-sm mx-auto py-8 px-3">
     <div class="flex flex-col mb-3" v-for="field in fields" :key="field.code">
-      <label class="mb-2 font-bold text-red-900" :for="field.code">{{
+      <label class="mb-2 font-bold text-green-900" :for="field.code">{{
         field.label
       }}</label>
       <input
@@ -18,9 +18,10 @@
         :id="field.code"
         v-model="newLand[field.code]"
       />
+    
     <input
         v-if="field.type == 'checkbox'"
-        class="border border-gray-200 p-2 rounded"
+        class="border ml-auto border-gray-200 p-2 rounded w-6 h-6"
         type="checkbox"
         :id="field.code"
         v-model="newLand[field.code]"
@@ -170,7 +171,7 @@ export default {
           type: "number",
         },
         {
-          label: "Disponibile",
+          label: "Disponibile fin da subito",
           code: "disponibile",
           type: "checkbox",
         },

@@ -1,4 +1,4 @@
-# Prova esame
+# Prova esame ZIP 14/01/2022
 
 Nel progetto la Banca della Terra è presente una tabella 'lands' con relativo modello(Land) con i seguenti campi:
 
